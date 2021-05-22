@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Users/lillie/class_activities /Code-Quiz/style.css"
-    <title>Document</title>
+    <link rel="stylesheet" href="/Users/lillie/class_activities /Code-Quiz/style.css">
+    <title>Code-Quiz</title>
 </head>
+
 <body>
+    <header>
+        <div>View Highscores:<span id="viewHighScores"></span></div>
+        <div>Time: <span id="timer">75</span></div>
+    </header>
+    <main class="questions-blanks">
+        <div id="container">
+            <pre id="firstPage">
+                                        <span class="LargeHone" >Coding Quiz Challenge</span>
+                 Try to answer the following code-related questions within the time limit.
+             Keep in mind that incorrect answer will penalize your scoretime by ten seconds!
+                                         <span id="btn-start">Start Quiz</span> 
+            </pre>
+            </div> 
+             <div id="quiz" style="display: none">
+             <div id="question"></div>   
+             <div class="choice" id="A" onclick="checkAnswer('A')"></div>  
+             <div class="choice" id="B" onclick="checkAnswer('B')"></div> 
+             <div class="choice" id="C" onclick="checkAnswer('C')"></div> 
+             <div class="choice" id="D" onclick="checkAnswer('D')"></div> 
+            </div> 
+        </div> 
+    </main>
+
+
     
     <script src="/Users/lillie/class_activities /Code-Quiz/script.js"></script>
 </body>
